@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT-Fundamentals-Zxuan</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Canvas for Moving Polygons -->
+    <canvas id="backgroundCanvas"></canvas>
+
+    <div class="container">
+        <!-- Slide 1: Title -->
+        <div class="slide active" id="slide1">
+            <h1>Challenges of Technology in the 21st Century</h1>
+            <h2>AI and Job Displacement in Programming</h2>
+            <p class="presenter">Presented by: Mark Angelo Dacanay – BSIT-1K</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#developerModal">About Developer</button>
+        </div>
+
+        <!-- Slide 2: Introduction Part 1 -->
+        <div class="slide" id="slide2">
+            <h2>What is AI and Job Displacement in Programming? (Part 1)</h2>
+            <p>In today's rapidly evolving technological landscape, Artificial Intelligence (AI) is transforming industries, and programming is no exception. AI tools are designed to automate repetitive and complex tasks that traditionally required human intervention, such as generating code from simple natural language descriptions. This automation not only speeds up development processes but also introduces significant challenges, particularly in terms of job displacement. For instance, tools like GitHub Copilot and ChatGPT enable developers to produce functional code snippets with minimal input, potentially reducing the demand for entry-level programmers who focus on routine coding. While these advancements promise greater efficiency and innovation, they also spark debates about the future of employment in the tech sector, balancing productivity gains against the risk of human displacement.</p>
+        </div>
+
+        <!-- Slide 3: Introduction Part 2 -->
+        <div class="slide" id="slide3">
+            <h2>What is AI and Job Displacement in Programming? (Part 2)</h2>
+            <ul>
+                <li>AI tools automate coding tasks, like writing code from natural language prompts, allowing developers to focus on higher-level design rather than syntax.</li>
+                <li>Examples include GitHub Copilot and ChatGPT for developers, which integrate seamlessly into coding environments to provide real-time assistance.</li>
+                <li>This leads to potential job losses in routine programming roles, as machines handle tasks that were once entry points for new programmers.</li>
+                <li>Focus: Efficiency gains vs. human displacement, highlighting the need for upskilling to adapt to AI-augmented workflows.</li>
+            </ul>
+            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="ChatGPT Interface Example">
+            <p class="image-caption">Example of ChatGPT assisting in coding, showing natural language to code conversion</p>
+        </div>
+
+        <!-- Slide 4: How AI Displaces Jobs Part 1 -->
+        <div class="slide" id="slide4">
+            <h2>How AI is Displacing Programming Jobs (Part 1)</h2>
+            <p>The integration of AI into programming workflows is reshaping the job market in profound ways. By automating routine tasks such as debugging, code generation, and even basic algorithm implementation, AI reduces the need for human involvement in these areas. This shift primarily affects entry-level and mid-level programmers, who may find their roles diminishing as AI tools take over. Reports from organizations like the World Economic Forum indicate that millions of jobs could be displaced by 2025, with IT and programming sectors being particularly vulnerable. In software development, companies are leveraging AI to accelerate project timelines and cut costs, often resulting in fewer hiring opportunities.</p>
+        </div>
+
+        <!-- Slide 5: How AI Displaces Jobs Part 2 -->
+        <div class="slide" id="slide5">
+            <h2>How AI Displaces Programming Jobs (Part 2)</h2>
+            <ul>
+                <li>AI handles routine tasks (e.g., debugging, code generation), reducing need for entry-level programmers and allowing experienced devs to delegate mundane work.</li>
+                <li>Reports: World Economic Forum predicts 85 million jobs displaced by 2025, including IT roles, with programming seeing a significant impact due to automation.</li>
+                <li>Industries: Software development sees faster builds, but fewer hires, as AI enables solo developers or small teams to accomplish what once required larger groups.</li>
+                <li>Impact: Shifts focus to senior roles in AI oversight and complex problem-solving, emphasizing the importance of continuous learning and adaptation in the field.</li>
+            </ul>
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Job Displacement Chart">
+            <p class="image-caption">Illustration of job market changes due to AI, showing shifts in employment trends</p>
+        </div>
+
+        <!-- Slide 6: Example Part 1 -->
+        <div class="slide" id="slide6">
+            <h2>Real-World Example: GitHub Copilot (Part 1)</h2>
+            <p>GitHub Copilot serves as a prime example of AI's impact on programming. Developed by GitHub in collaboration with OpenAI, this tool uses machine learning to suggest code snippets in real-time as developers type. It analyzes context from the codebase and provides completions that can range from simple lines to entire functions, significantly speeding up the coding process. While this enhances productivity, it also raises concerns about job security. Surveys, such as those conducted by Stack Overflow, reveal that a substantial portion of developers fear that AI could replace their roles, particularly in repetitive or template-based coding. As a BSIT student, I've personally experienced how tools like Copilot can accelerate learning and project completion, but they also underscore the need for programmers to develop skills beyond basic coding, such as understanding AI limitations and integrating it ethically into workflows.</p>
+            <img src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="GitHub Copilot Example">
+            <p class="image-caption">GitHub Copilot code suggestion interface, demonstrating AI-assisted coding</p>
+        </div>
+
+        <!-- Slide 7: Example Part 2 -->
+        <div class="slide" id="slide7">
+            <h2>Real-World Example: GitHub Copilot (Part 2)</h2>
+            <ul>
+                <li>Tool by GitHub/Microsoft that suggests code in real-time, trained on vast code repositories to provide context-aware recommendations.</li>
+                <li>Survey: 70% of developers (Stack Overflow) fear job replacement, reflecting broader anxieties about AI's role in creative and technical fields.</li>
+                <li>Personal Note: As a BSIT student, I've seen it speed up coding but highlight skill gaps, encouraging deeper learning in areas like AI prompt engineering.</li>
+            </ul>
+        </div>
+
+        <!-- Slide 8: Conclusion -->
+        <div class="slide" id="slide8">
+            <h2>Conclusion and Way Forward</h2>
+            <p>In conclusion, AI's integration into programming represents a double-edged sword: it boosts productivity and innovation but poses significant threats to traditional job roles. The displacement of jobs is not inevitable doom but a call to action for adaptation. By embracing reskilling and education, programmers can transition to roles that leverage AI rather than compete with it. This includes mastering AI ethics, prompt engineering, and collaborative human-AI workflows. Governments, educational institutions, and companies must invest in programs that prepare the workforce for this shift, ensuring that the benefits of AI are shared equitably. As we move forward, the focus should be on harnessing AI to create more meaningful, high-level opportunities in programming and beyond.</p>
+            <ul>
+                <li>AI boosts productivity but threatens jobs—adapt or risk displacement, by learning to work alongside AI tools effectively.</li>
+                <li>Solutions: Reskilling in AI ethics, prompt engineering, and collaboration, through online courses, certifications, and workplace training.</li>
+                <li>Opportunity: Shift to creative, high-level programming roles, such as designing AI systems or solving interdisciplinary problems.</li>
+            </ul>
+            <p>Let's embrace AI for innovation—questions?</p>
+            <a href="https://ibb.co/1JrGM4kZ">
+               <img src="https://i.ibb.co/Fq54XdF6/Shinigami-Aizen.png" alt="Shinigami-Aizen" border="0">
+⇝         </a>
+            <p class="image-caption">Looking ahead to AI innovation and future opportunities in tech</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="navigation">
+        <button id="prevBtn" class="btn btn-secondary">Prev</button>
+        <button id="nextBtn" class="btn btn-primary">Next</button>
+    </div>
+
+    <!-- Developer Modal -->
+    <div class="modal fade" id="developerModal" tabindex="-1" aria-labelledby="developerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="developerModalLabel">About the Developer</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Name:</strong> Mark Angelo Dacanay</p>
+                    <p><strong>Course:</strong> BSIT-1K (Bachelor of Science in Information Technology)</p>
+                    <p><strong>Background:</strong> A passionate IT student exploring the intersections of technology, AI, and programming. This presentation reflects my interest in the evolving challenges of tech in the 21st century.</p>
+                    <p><strong>Connect with me:</strong></p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <a href="https://www.facebook.com/share/14MKikKEp1J/" target="_blank" class="btn btn-primary btn-sm">View My Profile (Facebook)</a>
+                        <a href="https://t.me/ZRXAizenSosuke" target="_blank" class="btn btn-info btn-sm">Telegram</a>
+                        <a href="https://x.com/Prof_ZXuaN?s=09" target="_blank" class="btn btn-dark btn-sm">X</a>
+                        <a href="https://www.instagram.com/hanzo_akuma_07?igsh=MTd3cGpzbnlha3dneg==" target="_blank" class="btn btn-danger btn-sm">Instagram</a>
+                        <a href="https://github.com/login" target="_blank" class="btn btn-secondary btn-sm">GitHub</a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
