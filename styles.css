@@ -115,3 +115,53 @@ img {
     .slide { padding: 15px; }
     img { max-width: 90%; }
 }
+/* Navigation Styles for Better Mobile Visibility */
+.navigation {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for visibility */
+    border-top: 2px solid #007bff;
+}
+.navigation button {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 12px 24px;
+    margin: 0 10px;
+    min-width: 100px; /* Ensures buttons are wide enough to tap */
+}
+
+/* Mobile Responsiveness for Buttons */
+@media (max-width: 768px) {
+    .navigation button {
+        font-size: 1.5em; /* Larger text on mobile */
+        padding: 15px 30px; /* Bigger padding for easier tapping */
+        margin: 0 5px;
+        min-width: 120px; /* Wider buttons on mobile */
+    }
+    .navigation {
+        padding: 15px; /* More padding on mobile */
+    }
+}
+@media (max-width: 480px) {
+    .navigation button {
+        font-size: 1.8em; /* Even larger on very small screens */
+        padding: 18px 36px;
+        min-width: 140px;
+    }
+}    h1 { font-size: 2em; }
+    h2 { font-size: 1.5em; }
+    li, p { font-size: 1em; }
+    .slide { padding: 20px; width: 95%; }
+    .container { padding: 10px; }
+}
+@media (max-width: 480px) {
+    h1 { font-size: 1.5em; }
+    h2 { font-size: 1.2em; }
+    li, p { font-size: 0.9em; }
+    .slide { padding: 15px; }
+    img { max-width: 90%; }
+}
